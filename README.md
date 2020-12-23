@@ -2,6 +2,32 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+
+
+
+
+create `dev.js` file in `server/config/dev.js` with content of:
+
+```javascript
+module.exports = {
+    DB_URI: ' mongodb+srv://pavan:mongo@4321@cluster0.hs7k7.mongodb.net/testing?retryWrites=true&w=majority',
+    DB_URI: 'mongodb+srv://test:testtest@cluster0-3b6sg.mongodb.net/bwm-new-dev?retryWrites=true&w=majority',
+    JWT_SECRET: 'ad8a?897sad!'
+}
+```
+in base folder of project run `npm start` and then `npm start` to startup dev server.
+to run api server go to `server` folder with command `cd server` and run `node index.js`
+
+## How to populate DB with default data
+
+In case your `dev.js` file is created you can run in `server` folder command to populate  database `node fakeDB/cleanDB.js`
+
+
+
+
+
+
+
 ## Available Scripts
 
 In the project directory, you can run:
